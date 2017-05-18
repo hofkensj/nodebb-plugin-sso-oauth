@@ -30,8 +30,8 @@
 	var authenticationController = module.parent.require('./controllers/authentication');
 
 	var constants = Object.freeze({
-			type: 'oauth2',	// Either 'oauth' or 'oauth2'
-			name: 'itsyou.online',	// Something unique to your OAuth provider in lowercase, like "github", or "nodebb"
+			type: 'oauth',	// Either 'oauth' or 'oauth2'
+			name: '',	// Something unique to your OAuth provider in lowercase, like "github", or "nodebb"
 			oauth: {
 				requestTokenURL: '',
 				accessTokenURL: '',
@@ -40,8 +40,8 @@
 				consumerSecret: ''
 			},
 			oauth2: {
-				authorizationURL: 'https://itsyou.online/v1/oauth/authorize'
-				tokenURL: ' https://itsyou.online/v1/oauth/access_token',
+				authorizationURL: 'https://itsyou.online/v1/oauth/authorize',
+				tokenURL: 'https://itsyou.online/v1/oauth/access_token',
 				clientID: 'gig_nodebb_technical_support_forum',
 				clientSecret: 'Eeb8bxbOjVaIdjIkRE35NHAGDW-dkjyuD2qmfQ'
 			},
